@@ -1,0 +1,166 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#36d7e5;
+}
+.container{
+    width: 90%;
+    max-width: 500px;
+}
+h1{
+    color: #03203C;
+    opacity: 0.75;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+}
+.display-container{
+    position: relative;
+    background-color: #758283;
+    border-radius: 1rem;
+    border-bottom: 0.35rem solid #242B2E;
+    margin: 1rem 0;
+    padding-top: 0.35rem;
+}
+
+.display{
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem 1rem;
+    color: yellow;
+    font-size: 1.5rem;
+    line-height: 30px;
+    padding-right: 3rem;
+    border: none;
+}
+.display::placeholder{
+    position: absolute;
+    color: yellow;
+    top: 50%;
+    left: 1rem;
+    opacity: 0.5;
+    text-transform: uppercase;
+    line-height: 3px;
+    transform: translateY(-50%);
+}
+.display-container button{
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+}
+.input-container{
+    width: 100%;
+    background-color: #758283;
+    border-radius: 1rem;
+    padding: 2rem;
+    border-bottom: 0.35rem solid #242B2E;
+    line-height: 2.5rem;
+    color: black;
+    font-weight: bold;
+
+}
+.length-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.length-container p:nth-child(1){
+    font-size: 1.5rem;
+}
+.length-container p:nth-child(2){
+    color: yellow;
+    font-size: 1.5rem;
+}
+
+
+.strength-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.strength-container p{
+    font-size: 1.5rem;
+}
+.indicator{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.generateButton{
+    background-color: #50DBB4;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    font-size: 1.25rem ;
+    font-weight: bolder;
+    color: #0D0D0D;
+    border: 0.1rem solid black;
+}
+.generateButton:hover{
+    cursor: pointer;
+    background-color:#03203C;
+    color: #CAD5E2;
+}
+.check{
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+}
+.check input{
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 1rem solid white;
+    border-radius: 0.5rem;
+}
+.check input:hover{
+    cursor: pointer;
+}
+.check label{
+    padding-left: 1.5rem;
+}
+
+
+.slider{
+    width: 100%;
+    cursor: pointer;
+}
+.copybtn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.copyMsg{
+    position: absolute;
+    color: yellow;
+    background-color: 758283;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: bold;
+    bottom: 100%;
+    left: 50%;
+    opacity: 0; 
+    transform: scale(0);
+    transform-origin: bottom; 
+    transition: all 250ms ease-in-out; 
+}
+.copyMsg.active{
+    opacity: 1;
+    transform: scale(1);
+}
